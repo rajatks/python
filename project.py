@@ -1,4 +1,5 @@
-   def create():
+def create():
+       
     print("enter Id ")
     id1=int(input());
     print("Enter Name")
@@ -34,21 +35,25 @@ def display():
                 print("Age: ",record[2]);
                 print("Salary: ",record[3]);
                 print("Designation: ",record[4]);
-            f1.close();   
+            f1.close();
+
+            
+
                 
 
 n=1
 while n:
     print("1. create")
     print("2. Display")
-    print("3. exit")
+    print("3. Raise Salary")
+    print("4. Exit()");
     print("enter choice")
     n=int(input())
     if(n==1):
         create()
     elif(n==2):
         display()
-    elif(n==3):
+    elif(n==4):
         print("exiting...")
         n=0
 
