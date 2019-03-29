@@ -1,6 +1,5 @@
 from classes import *;
-arr=[];
-
+from projectexception import *;
 n=-1;
 m=-1;
 while n!=4:
@@ -18,26 +17,11 @@ while n!=4:
             print("4. Exit()");
             m=int(input());
             if(m==1):
-                print("Enter name:")
-                name=input();
-                print("enter Age:");
-                age=int(input());
-                e1=Clerk(name,age);
-                arr.append(e1);
+               Clerk();
             if(m==2):
-                print("Enter name:")
-                name=input();
-                print("enter Age:");
-                age=int(input());
-                e1=Programmer(name,age);
-                arr.append(e1);
+                Programmer();
             if(m==3):
-                print("\nEnter name:")
-                name=input();
-                print("\nenter Age:");
-                age=int(input());
-                e1=Manager(name,age);
-                arr.append(e1);
+                Manager();
             if(m==4):
                 break;
     elif(n==2):
